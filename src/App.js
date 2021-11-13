@@ -18,9 +18,10 @@ class App extends Component {
         
         <div className= "content">
           <Switch>
+            <Route path="/products/:id"  component={ProductDetails}/>
             <Route path="/products" component={Products}/>
             <Route path="/admin" component={Dashboard}/>
-            <Route path="/posts" component={Posts}/>
+            <Route path="/posts/:year?/:month?" component={Posts}/>
             <Route path="/"component={Home}/>
             {/* <Route path="/"  exact  component={Home}/> */}
           </Switch>
